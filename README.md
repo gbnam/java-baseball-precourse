@@ -5,3 +5,44 @@
 
 ## 과제 제출 과정
 * [과제 제출 방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
+
+#미션(요구사항)
+- 미션1 : 기능
+  1. 1~9 서로 다른 수 3자리 수 맞추는 게임
+  2. 게임 룰
+     1. 상대방(컴퓨터)의 서로 다른 3자리 수 설정
+     2. 유저는 3자리 숫자 제시
+     3. 제시한 수의 확인결과 출력
+        - 스트라이크 : 제시한 숫자가 존재 + 자리수가 같을때
+        - 볼 : 제시한 숫자가 존재하나 자리수가 다를때
+        - 낫싱 : 제시한 숫자가 전부 존재하지 않을때
+     4. 정답인 경우 재시작 여부 확인
+- 미션2 : 프로그래밍
+  1. 제약사항 체크
+     - [ ] 실행 시작점은 src/main/java의 baseball.Application의 main()이다
+     - [ ] JDK8 실행가능
+     - [ ] nextstep.utils의 Randoms.pickNumberInRange(), Console.readLine() API 활용
+     - [ ] 구현 완료시 src/test/java 폴더의 baseball.ApplicationTest에 있는 2개의 testcase 성공 
+     - [ ] [자바 코드 컨벤션](https://naver.github.io/hackday-conventions-java/) 지키면서 프로그래밍
+     - [ ] indent depth 2가 넘지 않도록 구현
+     - [ ] stream api 사용금지
+     - [ ] else 사용금지
+     - [ ] 함수(메소드)는 라인 수 10 이하로 구현
+  2. 단위테스트 
+     - [ ] 도메인 로직에 단위테스트 구현 (UI로직은 제외)
+     - [ ] 핵심로직과 UI로직 분리
+     - [ ] MVC패턴 기반 구현 후 View, Controller를 제외한 Model에 대한 단위테스트 추가
+- 미션3 : 과제
+  1. github에서 java-baseball-precourse clone
+  2. README.md 구현할 기능 목록 정리
+      - [ ] a. 상대방(컴퓨터)의 3자리 수 초기화
+      - [ ] b. 콘솔에서 숫자 입력받음
+      - [ ] c. 입력값 검증 (숫자만, 숫자 3자리, 숫자들이 서로 다른 수 여부 체크)
+      - [ ] d. 입력값에 따라 스트라이크,볼,낫싱 체크
+      - [ ] e. 결과에 따라 콘솔출력
+      - [ ] f. 3스트라이크일때까지 위 기능들 반복
+      - [ ] g. 3스트라이크일때 상대방 수 초기화 및 게임 다시시작 여부 입력받음
+  3. 위 기능 단위로 commit
+      1. 커밋시 참고 : [the AngularJS commit conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153/)
+      2. 과제제출방법 : [링크](https://github.com/next-step/nextstep-docs/tree/master/precourse)
+	
