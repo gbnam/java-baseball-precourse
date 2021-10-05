@@ -6,7 +6,7 @@
 ## 과제 제출 과정
 * [과제 제출 방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
 
-#미션(요구사항)
+## 미션(요구사항)
 - 미션1 : 기능
   1. 1~9 서로 다른 수 3자리 수 맞추는 게임
   2. 게임 룰
@@ -19,8 +19,8 @@
      4. 정답인 경우 재시작 여부 확인
 - 미션2 : 프로그래밍
   1. 제약사항 체크
-     - [ ] 실행 시작점은 src/main/java의 baseball.Application의 main()이다
-     - [ ] JDK8 실행가능
+     - [x] 실행 시작점은 src/main/java의 baseball.Application의 main()이다
+     - [x] JDK8 실행가능
      - [ ] nextstep.utils의 Randoms.pickNumberInRange(), Console.readLine() API 활용
      - [ ] 구현 완료시 src/test/java 폴더의 baseball.ApplicationTest에 있는 2개의 testcase 성공 
      - [ ] [자바 코드 컨벤션](https://naver.github.io/hackday-conventions-java/) 지키면서 프로그래밍
@@ -40,9 +40,10 @@
       - [ ] c. 입력값 검증 (숫자만, 숫자 3자리, 숫자들이 서로 다른 수 여부 체크)
       - [ ] d. 입력값에 따라 스트라이크,볼,낫싱 체크
       - [ ] e. 결과에 따라 콘솔출력
-      - [ ] f. 3스트라이크일때까지 위 기능들 반복
+      - [ ] f. 3스트라이크일때까지 다시 입력받으며 반복
       - [ ] g. 3스트라이크일때 상대방 수 초기화 및 게임 다시시작 여부 입력받음
   3. 위 기능 단위로 commit
       1. 커밋시 참고 : [the AngularJS commit conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153/)
-      2. 과제제출방법 : [링크](https://github.com/next-step/nextstep-docs/tree/master/precourse)
-	
+         1. 과제제출 : [제출방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
+         - [ ] PR 제출
+         - [ ] 메일발송
