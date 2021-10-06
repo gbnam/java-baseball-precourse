@@ -3,6 +3,7 @@ package baseball.model;
 import baseball.dto.ComputerDTO;
 import baseball.dto.GameResultDTO;
 import baseball.view.ConsoleView;
+import nextstep.utils.Console;
 import nextstep.utils.Randoms;
 
 public class GameModel {
@@ -22,7 +23,20 @@ public class GameModel {
         ConsoleView.printPredictNumber();
         String input = userInput.getPredictNumberInput();
         GameResultDTO gameResult = compareNumbers.compare(input, computerDto.getComputerNumber());
+        ConsoleView.printPredictResult(getResultText(gameResult));
         return gameResult;
+    }
+
+    // 출력될 게임결과 text 리턴
+    public String getResultText(GameResultDTO gameResult) {
+        String result = "";
+        if (gameResult.getStrikeCount() > 0)
+            result += gameResult.getStrikeCount() + "스트라이크 ";
+        if (gameResult.getBallCount() > 0)
+            result += gameResult.getBallCount() + "볼";
+        if (gameResult.getStrikeCount() + gameResult.getBallCount() == 0)
+            result = "낫싱";
+        return result;
     }
 
     // 랜덤숫자 생성
