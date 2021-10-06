@@ -7,10 +7,12 @@ import nextstep.utils.Randoms;
 
 public class GameModel {
 
+    CompareNumbers compareNumbers;
     NumberValidator numberValidator;
     UserInput userInput;
 
     public GameModel() {
+        compareNumbers = new CompareNumbers();
         numberValidator = new NumberValidator();
         userInput = new UserInput();
     }
@@ -19,7 +21,8 @@ public class GameModel {
     public GameResultDTO predictNumber(ComputerDTO computerDto) {
         ConsoleView.printPredictNumber();
         String input = userInput.getPredictNumberInput();
-        return null;
+        GameResultDTO gameResult = compareNumbers.compare(input, computerDto.getComputerNumber());
+        return gameResult;
     }
 
     // 랜덤숫자 생성
