@@ -1,13 +1,25 @@
 package baseball.model;
 
+import baseball.dto.ComputerDTO;
+import baseball.dto.GameResultDTO;
+import baseball.view.ConsoleView;
 import nextstep.utils.Randoms;
 
 public class GameModel {
 
     NumberValidator numberValidator;
+    UserInput userInput;
 
     public GameModel() {
         numberValidator = new NumberValidator();
+        userInput = new UserInput();
+    }
+
+    // 숫자 예측값 받아서 비교 후 결과 리턴
+    public GameResultDTO predictNumber(ComputerDTO computerDto) {
+        ConsoleView.printPredictNumber();
+        String input = userInput.getPredictNumberInput();
+        return null;
     }
 
     // 랜덤숫자 생성
