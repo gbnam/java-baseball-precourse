@@ -35,7 +35,7 @@
 - 미션3 : 과제
   1. project fork
      - [x] github에서 next-step/java-baseball-precourse fork
-  2. README.md 구현할 기능 목록 정리
+  2. 구현할 기능 목록 정리
      1. 컴퓨터 숫자 초기화
         - [ ] 랜덤함수 API 사용하여 1~9 숫자로 이루어진 3자리 숫자 생성 및 validation 통과할때까지 반복생성
      2. 숫자예측
