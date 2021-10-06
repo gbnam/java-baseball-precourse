@@ -21,29 +21,40 @@
   1. 제약사항 체크
      - [x] 실행 시작점은 src/main/java의 baseball.Application의 main()이다
      - [x] JDK8 실행가능
-     - [ ] nextstep.utils의 Randoms.pickNumberInRange(), Console.readLine() API 활용
-     - [ ] 구현 완료시 src/test/java 폴더의 baseball.ApplicationTest에 있는 2개의 testcase 성공 
-     - [ ] [자바 코드 컨벤션](https://naver.github.io/hackday-conventions-java/) 지키면서 프로그래밍
-     - [ ] indent depth 2가 넘지 않도록 구현
-     - [ ] stream api 사용금지
-     - [ ] else 사용금지
-     - [ ] 함수(메소드)는 라인 수 10 이하로 구현
+     - [x] nextstep.utils의 Randoms.pickNumberInRange(), Console.readLine() API 활용
+     - [x] 구현 완료시 src/test/java 폴더의 baseball.ApplicationTest에 있는 2개의 testcase 성공 
+     - [x] [자바 코드 컨벤션](https://naver.github.io/hackday-conventions-java/) 지키면서 프로그래밍
+     - [x] indent depth 2가 넘지 않도록 구현
+     - [x] stream api 사용금지
+     - [x] else 사용금지
+     - [x] 함수(메소드)는 라인 수 10 이하로 구현
   2. 단위테스트 
      - [ ] 도메인 로직에 단위테스트 구현 (UI로직은 제외)
-     - [ ] 핵심로직과 UI로직 분리
+     - [x] 핵심로직과 UI로직 분리
      - [ ] MVC패턴 기반 구현 후 View, Controller를 제외한 Model에 대한 단위테스트 추가
 - 미션3 : 과제
-  1. github에서 java-baseball-precourse clone
+  1. project fork
+     - [x] github에서 next-step/java-baseball-precourse fork
   2. README.md 구현할 기능 목록 정리
-      - [ ] a. 상대방(컴퓨터)의 3자리 수 초기화
-      - [ ] b. 콘솔에서 숫자 입력받음
-      - [ ] c. 입력값 검증 (숫자만, 숫자 3자리, 숫자들이 서로 다른 수 여부 체크)
-      - [ ] d. 입력값에 따라 스트라이크,볼,낫싱 체크
-      - [ ] e. 결과에 따라 콘솔출력
-      - [ ] f. 3스트라이크일때까지 다시 입력받으며 반복
-      - [ ] g. 3스트라이크일때 상대방 수 초기화 및 게임 다시시작 여부 입력받음
+     1. 컴퓨터 숫자 초기화
+        - [ ] 랜덤함수 API 사용하여 1~9 숫자로 이루어진 3자리 숫자 생성 및 validation 통과할때까지 반복생성
+     2. 숫자예측
+        - [ ] 번호를 입력하세요 콘솔출력
+        - [ ] API 사용하여 입력받은 숫자 validation 통과할때까지 반복 입력받기 (숫자만, 3자리, 중복)
+     4. 두 수를 비교하여 스트라이크, 볼, 낫싱 계산
+        - [ ] 스트라이크 계산
+        - [ ] 볼 계산
+        - [ ] 낫싱 계산
+     5. 결과출력
+        - [ ] 숫자 예측결과 콘솔출력
+     6. 3스트라이크인 경우 7번 진행, 아닌 경우 2번으로 돌아가서 반복
+        - [ ] 기능 반복 로직 구성
+     7. 종료 or 재시작(1번으로 진행) 선택
+        - [ ] 컴퓨터 숫자 재생성
+        - [ ] 재시작 여부 선택 콘솔 출력
+        - [ ] 재시작 or 종료 선택 
   3. 위 기능 단위로 commit
-      1. 커밋시 참고 : [the AngularJS commit conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153/)
-         1. 과제제출 : [제출방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
-         - [ ] PR 제출
-         - [ ] 메일발송
+     - 커밋시 참고 : [the AngularJS commit conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153/)
+     - 과제제출 : [제출방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
+       - [ ] PR 제출
+       - [ ] 메일발송
