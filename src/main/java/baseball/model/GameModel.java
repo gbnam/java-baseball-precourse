@@ -52,4 +52,9 @@ public class GameModel {
         return randomNumber;
     }
 
+    // 3스트라이크일 경우 컴퓨터 숫자 초기화
+    public void initCheck(int strikeCount, ComputerDTO computerDto) {
+        if (strikeCount >= 3)
+            computerDto.setComputerNumber(initNumber());
+    }
 }

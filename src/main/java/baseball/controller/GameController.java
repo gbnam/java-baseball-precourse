@@ -27,6 +27,7 @@ public class GameController {
         boolean isContinue = true;
         while (isContinue) {
             GameResultDTO gameResult = gameModel.predictNumber(computerDto); // 예측숫자 입력받아 정답과 비교
+            gameModel.initCheck(gameResult.getStrikeCount(), computerDto); // 3스트라이크일 경우 초기화
         }
         ConsoleView.printCloseGame();
     }

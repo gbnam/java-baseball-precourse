@@ -78,7 +78,7 @@
 
 ##### 2.6 종료 or 재시작([2.1부터 다시시작](https://github.com/gbnam/java-baseball-precourse#21-%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%88%AB%EC%9E%90-%EC%B4%88%EA%B8%B0%ED%99%94)) 선택
 
-- [ ] 컴퓨터 숫자 재생성
+- [x] 컴퓨터 숫자 재생성
 - [ ] 재시작 여부 선택 콘솔 출력
 - [ ] 재시작 or 종료 선택
 
