@@ -44,8 +44,8 @@ public class GameModel {
         String randomNumber = "";
         boolean isPass = false;
         while (!isPass) {
-            randomNumber = Integer.toString(Randoms.pickNumberInRange(1, 9) * 100 + Randoms.pickNumberInRange(1, 9) * 10
-                    + Randoms.pickNumberInRange(1, 9));
+            randomNumber = Integer.toString(Randoms.pickNumberInRange(1, 9) * 100
+                    + Randoms.pickNumberInRange(1, 9) * 10 + Randoms.pickNumberInRange(1, 9));
 //            randomNumber = Integer.toString(Randoms.pickNumberInRange(123,987)); // 테스트시 에러발생
             isPass = numberValidator.isPassValidation(randomNumber); // 생성된 랜덤숫자 validation 통과할때까지 반복
         }
@@ -56,5 +56,26 @@ public class GameModel {
     public void initCheck(int strikeCount, ComputerDTO computerDto) {
         if (strikeCount >= 3)
             computerDto.setComputerNumber(initNumber());
+    }
+
+    // 게임결과가 3스트라이크인 경우 재시작 or 종료 선택
+    public boolean isContinueCheck(GameResultDTO gameResult) {
+        if (gameResult.getStrikeCount() >= 3) {
+            ConsoleView.printGameFinished();
+            return isRestart();
+        }
+        return true;
+    }
+
+    // 1을 입력받으면 재시작, 2를 입력받으면 종료
+    public boolean isRestart() {
+        ConsoleView.printSelectRestart(); // 재시작 문구 출력
+        String inputSelectContinue = Console.readLine();
+        if ("1".equals(inputSelectContinue)) {
+            return true;
+        } else if ("2".equals(inputSelectContinue)) {
+            return false;
+        }
+        return false;
     }
 }
